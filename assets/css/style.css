@@ -1,15 +1,17 @@
 body {
     background-color: dodgerblue;
+    width: 100%;
     
 }
 
 .container {
-    width: auto;
+    width: 100%;
     border: 2px solid black;
     margin: 10px;
     font-size: 18px;
     background: black;
     color: white;
+
 }
 
 #hero-input {

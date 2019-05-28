@@ -35,7 +35,7 @@ $("#add-hero").on("click", function(event){
 
     topics.push(hero);
 
-    $("hero-input").val("");
+    $("#hero-input").val("");
 
     renderButtons();
 
