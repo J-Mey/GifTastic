@@ -1,6 +1,22 @@
-
+body {
+    background-color: dodgerblue;
+    
+}
 
 .container {
-    width: 960px;
+    width: auto;
     border: 2px solid black;
+    margin: 10px;
+    font-size: 18px;
+    background: black;
+    color: white;
+}
+
+#hero-input {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.btn {
+    margin: 5px;
 }

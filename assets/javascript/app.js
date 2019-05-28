@@ -19,6 +19,8 @@ function renderButtons(){
         a.attr("hero-name", topics[i]);
         // adding text value to button
         a.text(topics[i]);
+        // adding bootstrap button properties
+        a.addClass("btn btn-primary");
         // adding button to the HTML
         $("#button-view").append(a);
     }
