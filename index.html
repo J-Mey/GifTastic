@@ -8,27 +8,37 @@
     <title>GifTastic</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container">
 
-        <!-- Button created will appear here -->    
-        <div id="button-view"></div>
+        <!-- Button created will appear here -->
+           <div class="row">
+                <div class="col-sd-12">
+                    <div id="button-view"></div>
+                </div> 
+            </div>
 
-        <form id="hero-form">
-            <label for="hero-input">Add a Hero!</label>
-            <input type="text" id="hero-input">
-            <br>
+        
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Heroes will be placed here -->
+                <div id="heroes-view"></div>
+            </div>
 
-        <!-- Button adds new hero when clicked -->
-            <input id="add-hero" type="submit" value="Submit">
-        </form>
-
-        <!-- Heroes will be placed here -->
-        <div id="heroes-view"></div>
+            <div class="col-md-3">
+                <form id="hero-form">
+                    <label for="hero-input">Add a Hero!</label>
+                    <input type="text" id="hero-input"><br>
+                    
+                    <!-- Button adds new hero when clicked -->
+                    <input class ="btn btn-primary" id="add-hero" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
 
     </div>
     
