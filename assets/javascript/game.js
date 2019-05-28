@@ -9,7 +9,7 @@ function renderButtons(){
     $("#button-view").empty();
 
     // looping through the array of topics
-    for (var i=0; i < heroes.length; i++) {
+    for (i=0; i < heroes.length; i++) {
         
         // dynamic button generated
         var a = $("<button>");
@@ -24,10 +24,8 @@ function renderButtons(){
     }
 }
 
-renderButtons();
-
 // Adding button for heroes 
-$("#add-hero").on("click", function(){
+$("#add-hero").on("click", function(event){
 
     event.preventDefault();
 
@@ -35,14 +33,21 @@ $("#add-hero").on("click", function(){
 
     heroes.push(hero);
 
+    $("hero-input").val("");
+
     renderButtons();
+
+    console.log(heroes);
 })
+
+renderButtons();
 
 // Pulling hero gifs from giphy api
 
-$("button").on("click", function(){
+$(document).on("click", ".hero", function(){
 
     var hero = $(this).attr("hero-name");
+    console.log (this);
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         hero + "&api_key=aV4XV0UMMkbHJCOI3nWb5fraoWtOZrqc&limit=10";
@@ -58,7 +63,10 @@ $.ajax({
 
         var results = response.data;
 
-        for(var i=0; i < results.length; i++) {
+        $("#heroes-view").empty();
+
+        for (var i=0; i < results.length; i++) {
+
             var heroDiv = $("<div>");
 
             //var rating = results[i].rating;
@@ -76,6 +84,7 @@ $.ajax({
         }
     });
 });
+
 
 });
 
