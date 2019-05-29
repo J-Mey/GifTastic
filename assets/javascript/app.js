@@ -70,6 +70,8 @@ $.ajax({
             // creating tempory div to place rating and image in HTML
             var heroDiv = $("<div>");
 
+            heroDiv.addClass("imageContainer");
+
             // creating tempory p for ratings
             var p = $("<p>").text("Rating: " + results[i].rating);
 

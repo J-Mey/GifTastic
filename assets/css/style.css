@@ -1,11 +1,11 @@
 body {
     background-color: dodgerblue;
-    width: 100%;
+    
     
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     border: 2px solid black;
     margin: 10px;
     font-size: 18px;
@@ -22,3 +22,8 @@ body {
 .btn {
     margin: 5px;
 }
+
+.imageContainer {
+    float: left;
+}
+
