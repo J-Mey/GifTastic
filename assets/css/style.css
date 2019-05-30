@@ -1,22 +1,19 @@
 body {
-    background-color: dodgerblue;
-    
-    
-}
-
-.container {
-    width: 100vw;
-    border: 2px solid black;
-    margin: 10px;
-    font-size: 18px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
     background: black;
     color: white;
-
 }
 
 #hero-input {
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#add-hero {
+    margin-top: 15px;
+    margin-left: 0px; 
 }
 
 .btn {
@@ -26,4 +23,3 @@ body {
 .imageContainer {
     float: left;
 }
-
