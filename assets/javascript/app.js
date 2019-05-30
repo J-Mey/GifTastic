@@ -81,8 +81,9 @@ $.ajax({
             // adding attributes to the images pull from giphy
             heroImage.attr("src", results[i].images.fixed_height_still.url);
             heroImage.attr("data-animate", results[i].images.fixed_height.url);
-            heroImage.attr("data-still", results[i].images.fixed_height.url);
+            heroImage.attr("data-still", results[i].images.fixed_height_still.url);
             heroImage.attr("data-state", "still");
+            heroImage.attr("data-state", "animate");
 
             // On click function to stop animation
             heroImage.on("click", startAnimation);
@@ -102,13 +103,14 @@ $.ajax({
         var animate = $(this).attr("data-animate");
         var still = $(this).attr("data-still");
         
-        if (state === "still") {
+       if (state === "still") {
             $(this).attr("src", animate);
             $(this).attr("data-state", "animate");
         }else{
             $(this).attr("src", still);
             $(this).attr("data-state", "still");
-        }
+        } 
+
     }
 
 
