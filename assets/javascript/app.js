@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-var topics = ["Son Goku", "Spider-Man", "Ironman", "One Punch Man", "John Wick"];
+var topics = ["Son Goku", "Spider-Man", "Ironman", "One Punch Man", "John Wick", "Batman", "Black Widow", "Thor", "Vegeta"];
 
 // function to display hero data
 function renderButtons(){
